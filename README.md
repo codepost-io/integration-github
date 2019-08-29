@@ -17,16 +17,16 @@ codePost supports three different GitHub configutations. Select the one that app
 
 ### GitHub Classroom
 
-If you are using GitHub Classroom to administer your course, find import instructions [here](https://github.com/rfreling/miscellaneous/tree/master/github/GitHub_Classroom).
+If you are using GitHub Classroom to administer your course, find import instructions [here](https://github.com/codepost-io/integration-github/tree/master/GitHub_Classroom).
 
 ### Student repositories (Template A)
 
 Every student has a single repository for the course. Each assignment is a new directory within the repository.
 
-If this is how your course GitHub is configured, find import instructions [here](https://github.com/rfreling/miscellaneous/tree/master/github/Template_A).
+If this is how your course GitHub is configured, find import instructions [here](https://github.com/codepost-io/integration-github/tree/master/Template_A).
 
 ### Assignment repositories (Template B)
 
 Each student submits code to new repository for each assignment.
 
-If this is how your course GitHub is configured, find import instructions [here](https://github.com/rfreling/miscellaneous/tree/master/github/Template_B).
+If this is how your course GitHub is configured, find import instructions [here](https://github.com/codepost-io/integration-github/tree/master/Template_B).
