@@ -63,9 +63,11 @@ for repo in repos:
 
     student_dir = os.path.join(_upload_dir, email)
 
-    cmd = "git clone {} {}>/dev/null 2>&1".format(repo[1], student_dir)
-    if DEBUG:
-        cmd = "git clone {} {}".format(repo[1], student_dir)
+    cmd = "git clone https://{}@{} {}".format(GITHUB_TOKEN, repo[1].split('//')[1], student_dir)
+    if not DEBUG:
+        cmd = "{}{}".format(cmd, ">/dev/null 2>&1")
+        print('#', end='')
+        sys.stdout.flush()
 
     os.system(cmd)
 
@@ -73,10 +75,14 @@ for repo in repos:
         assignment = os.path.join(student_dir, d)
 
         # Ignore assignments that don't match the ASSIGNMENT_PATTERN
-        if not os.path.isdir(assignment) or d[:1] == '.' or assignment_regex.search(d) == None:
+        if not os.path.isdir(assignment):
+            os.remove(assignment)
+        elif d[:1] == '.' or assignment_regex.search(d) == None:
             delete_directory(assignment)
         else:
             for f in os.listdir(assignment):
                 file = os.path.join(assignment, f)
                 shutil.move(file, student_dir)
             delete_directory(assignment)
+
+print()

@@ -60,8 +60,12 @@ for repo in repos:
 
     student_dir = os.path.join(_upload_dir, email)
 
-    cmd = "git clone {} {}>/dev/null 2>&1".format(repo[1], student_dir)
-    if DEBUG:
-        cmd = "git clone {} {}".format(repo[1], student_dir)
+    cmd = "git clone https://{}@{} {}".format(GITHUB_TOKEN, repo[1].split('//')[1], student_dir)
+    if not DEBUG:
+        cmd = "{}{}".format(cmd, ">/dev/null 2>&1")
+        print('#', end='')
+        sys.stdout.flush()
 
     os.system(cmd)
+
+print()
