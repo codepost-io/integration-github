@@ -1,6 +1,6 @@
 # Using a roster to map repositories to students
 
-The example in (Template_B)[https://github.com/codepost-io/integration-github/tree/master/Template_B] assumes a standard naming convention for the student repositories.
+The example in [Template_B](https://github.com/codepost-io/integration-github/tree/master/Template_B) assumes a standard naming convention for the student repositories.
 
 If the student GitHub repository names are _not_ standardized, then we can generalize the integration by including a `roster.csv` that maps `GitHub Clone URL` to `student email`.
 
