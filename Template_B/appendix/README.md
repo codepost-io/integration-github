@@ -31,7 +31,7 @@ Open the script in a text editor, and update the following variables:
 
 | Variable     | Description                                   |
 | ------------ | --------------------------------------------- |
-| GITHUB_TOKEN | Your GitHub Personal Access Token from Step 0 |
+| GITHUB_TOKEN | Your GitHub Personal Access Token from Step 1 |
 
 Copy the `roster.csv` into the same directory.
 
