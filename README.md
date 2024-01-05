@@ -11,7 +11,7 @@ A typical weekly workflow involving GitHub and codePost might look something lik
 
 ## Import submissions into codePost from GitHub
 
-codePost supports three different GitHub configutations. Select the one that applies to your course and follow the corresponding instructions.
+codePost supports three different GitHub configurations. Select the one that applies to your course and follow the corresponding instructions.
 
 > Don't see your configuration? Let us know at team@codepost.io
 
